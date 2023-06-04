@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #f95959;
+    --second-color: #455d7a;
+    --gray-color: #e3e3e3;
+    --white-color: #fff;
+    --padding: 80px;
+    --roboto: 'Roboto', sans-serif;
+    --Playfair: 'Playfair', serif;
+}
+
+/* Start Global */
+
+a {
+    text-decoration: none;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    left: 110px;
+    bottom: 40px;
+    font-size: 50px;
+    color: #25D366;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.main-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.btn-main {
+    font-size: 18px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    outline: none;
+    text-transform: capitalize;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.btn-main-dark {
+    border: 1px solid var(--second-color);
+    color: var(--white-color);
+    background: var(--second-color);
+}
+
+.btn-main-dark:hover {
+    background: var(--white-color);
+    color: var(--second-color);
+}
+
+/* End Global */
+
+
+/* Start Landing */
+
+.landing {
+    background: url('../imgs/landing-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.landing::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.landing .container {
+    position: relative;
+    z-index: 1;
+}
+
+.landing .nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 0;
+
+}
+
+.logo{
+    font-size: 32px;
+    color: var(--main-color);
+}
+
+.landing .link {
+    color: var(--white-color);
+    font-size: 20px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.landing .link:hover {
+    color: var(--main-color);
+}
+
+.landing-title {
+    padding: var(--padding) 0;
+}
+
+.landing .header {
+    color: var(--white-color);
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.landing p {
+    color: var(--white-color);
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.landing .btn-main {
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border: 1px solid var(--main-color);
+}
+
+.landing .btn-main:hover {
+    color: var(--main-color);
+    background: var(--white-color);
+}
+
+/* End Landing */
+
+/* Start Smartest Project */
+
+.smartest-projects {
+    padding: var(--padding) 0;
+}
+
+.smartest-projects .main-title {
+    text-align: center;
+}
+
+.smartest-projects .proj-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.smartest-projects .proj-grid .grid-item {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.smartest-projects .proj-grid .grid-item:hover {
+    box-shadow: 0 0 15px var(--gray-color);
+}
+
+.smartest-projects .proj-grid .grid-item i {
+    font-size: 32px;
+    color: var(--second-color);
+    margin-bottom: 24px;
+}
+
+.smartest-projects .proj-grid .grid-item h2 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.smartest-projects .proj-grid .grid-item.odd-item h2 {
+    color: var(--main-color);
+    font-family: var(--roboto);
+}
+.smartest-projects .proj-grid .grid-item.even-item h2 {
+    color: var(--second-color);
+    font-family: var(--Playfair);
+}
+
+/* End Smartest Project */
+
+/* Start alook */
+
+.alook {
+    background: var(--gray-color);
+    padding: var(--padding) 0;
+}
+
+.alook .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.alook .left {
+    margin-bottom: 30px;
+}
+
+.alook p {
+    max-width: 600px;
+}
+
+
+.alook .right img {
+    max-width: 300px;
+}
+
+/* End alook */
+
+/* Start relible */
+
+.relible {
+    background: #ff9b9b;
+    color: var(--white-color);
+    padding: var(--padding) 0;
+}
+
+.relible .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.relible .left {
+    margin-bottom: 30px;
+}
+
+.relible p {
+    max-width: 600px;
+}
+
+/* End relible */
+
+/* Start logos */
+
+.logos {
+    padding: var(--padding) 0;
+}
+
+.logos .container .logos-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logos .container .logos-grid .grid-item {
+    width: 120px;
+    padding: 20px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.logos .container .logos-grid .grid-item:hover {
+    box-shadow: 0 0 15px var(--gray-color);
+}
+
+.logos .container .logos-grid .grid-item img {
+    width: 100%;
+}
+
+/* End logos */
+
+
+/* Start Contact */
+
+.contact{
+    background: url('../imgs/contact-bg.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.contact::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.contact .container {
+    padding: var(--padding) 0;
+    position: relative;
+    z-index: 1;
+    color: var(--white-color);
+}
+
+.contact .contact-area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .contact-area .left {
+    max-width: 500px;
+}
+
+.contact .contact-area .left h1{
+    text-transform: capitalize;
+}
+
+.contact .contact-area .left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact #form {
+    max-width: 500px;
+}
+
+.contact #form label {
+    margin-bottom: 12px;
+}
+
+.contact #form .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact #form input {
+    width: 95%;
+}
+
+.contact #form input,
+.contact #form textarea {
+    color: var(--white-color);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    padding: 10px 15px;
+    background: inherit;
+}
+
+.contact #form .info .info-item {
+    width: 100%;
+}
+
+.contact #form .message label {
+    display: block;
+}
+
+.contact #form .message textarea {
+    width: 100%;
+}
+
+.contact button {
+    width: 100%;
+    background: var(--main-color);
+    padding: 15px;
+    color: var(--white-color);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: 1px solid var(--main-color);
+    outline: none;
+}
+
+/* End Contact */
+
+/* Start Footer */
+
+footer {
+    background: #111;
+    padding: 20px 0;
+    color: var(--white-color);
+    font-size: 20px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container a {
+    color: var(--white-color);
+    margin-right: 10px;
+}
+
+/* End Footer */
